@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "La meva primera carta"
-date: date: 2026-10-10 12:00:00 +0200
+date: 2026-10-10 12:00:00 +0200
 description: "Una primera carta des d’Aachen."
 ---
 
