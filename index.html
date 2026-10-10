@@ -69,17 +69,44 @@
       <p class="empty-state" id="empty-state" hidden>No hem trobat cap entrada amb aquesta cerca.</p>
     </section>
 
+
     <section class="subscribe-section" id="subscriu-te" aria-labelledby="subscribe-heading">
       <div class="subscribe-mark" aria-hidden="true">✳</div>
       <p class="eyebrow">UNA CARTA DE TANT EN TANT</p>
       <h2 id="subscribe-heading">Les novetats, directament al teu correu</h2>
       <p>Subscriu-t'hi per rebre un correu quan es publiqui una nova entrada. Sense soroll ni missatges innecessaris.</p>
-      <form class="subscribe-form" id="subscribe-form">
+    
+      <form
+        class="subscribe-form"
+        id="subscribe-form"
+        action="https://simple-newsletter.com/v1/subscriptions/"
+        method="get"
+      >
+        <input
+          type="hidden"
+          name="uri"
+          value="https://neuxu.github.io/cartesdesdaachen/feed.xml"
+        >
+        <input
+          type="hidden"
+          name="return"
+          value="https://neuxu.github.io/cartesdesdaachen/"
+        >
+        <input type="hidden" name="redirect" value="true">
+    
         <label class="visually-hidden" for="email">La teva adreça electrònica</label>
-        <input id="email" name="email" type="email" placeholder="tu@exemple.cat" required>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="tu@exemple.cat"
+          autocomplete="email"
+          required
+        >
         <button type="submit">Vull subscriure-m'hi</button>
       </form>
-      <p class="form-note">En subscriure't, acceptes rebre correus amb les noves publicacions. Podràs donar-te de baixa en qualsevol moment.</p>
+    
+      <p class="form-note">Rebràs un correu per confirmar la subscripció. Podràs donar-te de baixa quan vulguis.</p>
       <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
     </section>
 
