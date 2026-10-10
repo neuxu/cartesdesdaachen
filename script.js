@@ -17,9 +17,8 @@ searchInput?.addEventListener("input", () => {
   emptyState.hidden = visible > 0;
 });
 
-form?.addEventListener("submit", event => {
-  event.preventDefault();
-  formMessage.textContent = "Aquest formulari és una maqueta: abans de publicar el blog, cal connectar-lo a un servei de subscripcions per guardar l'adreça i enviar els correus.";
+form?.addEventListener("submit", () => {
+  formMessage.textContent = "Et redirigirem a Simple Newsletter per gestionar la subscripció. Revisa el correu per confirmar-la.";
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
