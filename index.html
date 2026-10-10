@@ -49,26 +49,23 @@
           <input id="search-input" type="search" placeholder="Escriu una paraula…" autocomplete="off">
         </label>
       </div>
+
       <div class="post-list" id="post-list">
-        <article class="archive-card" id="article-exemple" data-search="aturar-se calma quotidianitat">
-          <p class="post-meta">10 d'octubre de 2026</p>
-          <h3><a href="#article-exemple">De vegades, només cal aturar-se</a></h3>
-          <p>Sobre trobar una mica d'espai enmig del soroll de cada dia.</p>
-          <span class="read-time">4 minuts de lectura</span>
-        </article>
-        <article class="archive-card" data-search="petites coses records passejades">
-          <p class="post-meta">2 d'octubre de 2026</p>
-          <h3><a href="#article-exemple">Les petites coses que ens queden</a></h3>
-          <p>Una passejada, una conversa inesperada i altres moments que fan casa.</p>
-          <span class="read-time">3 minuts de lectura</span>
-        </article>
-        <article class="archive-card" data-search="escriure començar idees">
-          <p class="post-meta">21 de setembre de 2026</p>
-          <h3><a href="#article-exemple">Començar abans de tenir-ho tot clar</a></h3>
-          <p>Potser no cal tenir totes les respostes per començar a escriure.</p>
-          <span class="read-time">5 minuts de lectura</span>
-        </article>
+        {% for post in site.posts %}
+          <article
+            class="archive-card"
+            data-search="{{ post.title | escape }} {{ post.excerpt | strip_html | escape }}"
+          >
+            <p class="post-meta">{{ post.date | date: "%-d de %B de %Y" }}</p>
+            <h3>
+              <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 | escape }}</p>
+            <span class="read-time">Una carta des d'Aachen</span>
+          </article>
+        {% endfor %}
       </div>
+
       <p class="empty-state" id="empty-state" hidden>No hem trobat cap entrada amb aquesta cerca.</p>
     </section>
 
