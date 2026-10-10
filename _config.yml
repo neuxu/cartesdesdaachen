@@ -1,0 +1,10 @@
+title: "cartesdesdaachen"
+description: "Cartes, pensaments i històries des d’Aachen."
+lang: ca
+url: "https://neuxu.github.io"
+baseurl: "/cartesdesdaachen"
+
+plugins:
+  - jekyll-feed
+
+permalink: /cartes/:title/
