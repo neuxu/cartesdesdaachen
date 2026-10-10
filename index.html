@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un espai per compartir pensaments, històries i petites descobertes.">
+  <title>cartesdesdaachen</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="hero-banner" role="img" aria-label="Paisatge càlid de camp al capvespre"></div>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Inici">cartesdesdaachen</a>
+      <p class="tagline">Cartes, pensaments i històries des d’Aachen</p>
+      <nav aria-label="Navegació principal">
+        <a href="#inici">Inici</a>
+        <a href="#articles">Articles</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#subscriu-te">Subscriu-t'hi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell" id="inici">
+    <section class="latest-section" aria-labelledby="latest-heading">
+      <p class="eyebrow">EL MÉS RECENT</p>
+      <article class="featured-post">
+        <div class="featured-image" role="img" aria-label="Llum de tarda entrant per una finestra"></div>
+        <div class="featured-copy">
+          <p class="post-meta">10 d'octubre de 2026 · 4 minuts de lectura</p>
+          <h1 id="latest-heading">De vegades, només cal aturar-se</h1>
+          <p class="lead">Cartes i pensaments des d’Aachen: petites històries, descobertes i fragments de vida quotidiana.</p>
+          <a class="text-link" href="#article-exemple">Llegeix l'entrada <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="archive-section" id="articles" aria-labelledby="archive-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TORNAR-HI</p>
+          <h2 id="archive-heading">Entrades anteriors</h2>
+        </div>
+        <label class="search-label">Cerca articles
+          <input id="search-input" type="search" placeholder="Escriu una paraula…" autocomplete="off">
+        </label>
+      </div>
+      <div class="post-list" id="post-list">
+        <article class="archive-card" id="article-exemple" data-search="aturar-se calma quotidianitat">
+          <p class="post-meta">10 d'octubre de 2026</p>
+          <h3><a href="#article-exemple">De vegades, només cal aturar-se</a></h3>
+          <p>Sobre trobar una mica d'espai enmig del soroll de cada dia.</p>
+          <span class="read-time">4 minuts de lectura</span>
+        </article>
+        <article class="archive-card" data-search="petites coses records passejades">
+          <p class="post-meta">2 d'octubre de 2026</p>
+          <h3><a href="#article-exemple">Les petites coses que ens queden</a></h3>
+          <p>Una passejada, una conversa inesperada i altres moments que fan casa.</p>
+          <span class="read-time">3 minuts de lectura</span>
+        </article>
+        <article class="archive-card" data-search="escriure començar idees">
+          <p class="post-meta">21 de setembre de 2026</p>
+          <h3><a href="#article-exemple">Començar abans de tenir-ho tot clar</a></h3>
+          <p>Potser no cal tenir totes les respostes per començar a escriure.</p>
+          <span class="read-time">5 minuts de lectura</span>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No hem trobat cap entrada amb aquesta cerca.</p>
+    </section>
+
+    <section class="subscribe-section" id="subscriu-te" aria-labelledby="subscribe-heading">
+      <div class="subscribe-mark" aria-hidden="true">✳</div>
+      <p class="eyebrow">UNA CARTA DE TANT EN TANT</p>
+      <h2 id="subscribe-heading">Les novetats, directament al teu correu</h2>
+      <p>Subscriu-t'hi per rebre un correu quan es publiqui una nova entrada. Sense soroll ni missatges innecessaris.</p>
+      <form class="subscribe-form" id="subscribe-form">
+        <label class="visually-hidden" for="email">La teva adreça electrònica</label>
+        <input id="email" name="email" type="email" placeholder="tu@exemple.cat" required>
+        <button type="submit">Vull subscriure-m'hi</button>
+      </form>
+      <p class="form-note">En subscriure't, acceptes rebre correus amb les noves publicacions. Podràs donar-te de baixa en qualsevol moment.</p>
+      <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="about-section" id="sobre-mi">
+      <p class="eyebrow">QUI HI HA AL DARRERE</p>
+      <h2>Sobre aquest racó</h2>
+      <p>cartesdesdaachen és un espai personal per posar paraules a les idees, compartir descobertes i guardar històries que mereixen una mica més de temps. Aquest text és provisional: el pots substituir per la teva presentació.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#inici">cartesdesdaachen</a>
+    <p>Fet amb calma · © <span id="year"></span></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
