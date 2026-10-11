@@ -28,16 +28,42 @@
   <main class="page-shell" id="inici">
     <section class="latest-section" aria-labelledby="latest-heading">
       <p class="eyebrow">EL MÉS RECENT</p>
-      <article class="featured-post">
-        <div class="featured-image" role="img" aria-label="Llum de tarda entrant per una finestra"></div>
-        <div class="featured-copy">
-          <p class="post-meta">10 d'octubre de 2026 · 4 minuts de lectura</p>
-          <h1 id="latest-heading">De vegades, només cal aturar-se</h1>
-          <p class="lead">Cartes i pensaments des d’Aachen: petites històries, descobertes i fragments de vida quotidiana.</p>
-          <a class="text-link" href="#article-exemple">Llegeix l'entrada <span aria-hidden="true">→</span></a>
-        </div>
-      </article>
+    
+      {% assign latest_post = site.posts.first %}
+    
+      {% if latest_post %}
+        <article class="featured-post">
+          <div
+            class="featured-image"
+            role="img"
+            aria-label="Llum de tarda entrant per una finestra"
+          ></div>
+    
+          <div class="featured-copy">
+            <p class="post-meta">
+              {{ latest_post.date | date: "%-d de %B de %Y" }}
+            </p>
+    
+            <h1 id="latest-heading">
+              {{ latest_post.title | escape }}
+            </h1>
+    
+            <p class="lead">
+              {{ latest_post.description
+                | default: latest_post.excerpt
+                | strip_html
+                | truncate: 180
+                | escape }}
+            </p>
+    
+            <a class="text-link" href="{{ latest_post.url | relative_url }}">
+              Llegeix l'entrada <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      {% endif %}
     </section>
+
 
     <section class="archive-section" id="articles" aria-labelledby="archive-heading">
       <div class="section-heading">
