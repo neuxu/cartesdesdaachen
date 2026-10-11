@@ -77,17 +77,23 @@ button:hover { background: var(--accent-dark); }
   .archive-card { min-height: auto; }
   .subscribe-form { flex-direction: column; }
   .subscribe-form button { min-height: 46px; }
-  /* Marges de les pàgines individuals de les cartes */
-.post-content {
-  max-width: 720px;
-  margin: 0 auto;
+}
+
+/* Marges i amplada de les pàgines de les cartes */
+.article-page {
   padding: 40px 24px 60px;
   box-sizing: border-box;
 }
 
+.article-content {
+  max-width: 720px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Marges més petits en pantalles de mòbil */
 @media (max-width: 600px) {
-  .post-content {
+  .article-page {
     padding: 28px 18px 40px;
   }
-}
 }
