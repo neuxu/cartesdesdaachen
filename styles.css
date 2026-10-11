@@ -77,4 +77,17 @@ button:hover { background: var(--accent-dark); }
   .archive-card { min-height: auto; }
   .subscribe-form { flex-direction: column; }
   .subscribe-form button { min-height: 46px; }
+  /* Marges de les pàgines individuals de les cartes */
+.post-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .post-content {
+    padding: 28px 18px 40px;
+  }
+}
 }
