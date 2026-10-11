@@ -6,16 +6,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Un espai per compartir pensaments, històries i petites descobertes.">
+  <meta name="description" content="per si algú té ganes de llegir les meves aventures per Aachen">
   <title>cartesdesdaachen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div class="hero-banner" role="img" aria-label="Paisatge càlid de camp al capvespre"></div>
+    <div class="hero-banner" role="img" aria-label="banner Aachen"></div>
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Inici">cartesdesdaachen</a>
-      <p class="tagline">Cartes, pensaments i històries des d’Aachen</p>
+      <p class="tagline">per si algú té ganes de llegir les meves aventures per Aachen</p>
       <nav aria-label="Navegació principal">
         <a href="#inici">Inici</a>
         <a href="#articles">Cartes</a>
@@ -33,12 +33,6 @@
     
       {% if latest_post %}
         <article class="featured-post">
-          <div
-            class="featured-image"
-            role="img"
-            aria-label="Llum de tarda entrant per una finestra"
-          ></div>
-    
           <div class="featured-copy">
             <p class="post-meta">
               {{ latest_post.date | date: "%-d de %B de %Y" }}
@@ -63,7 +57,6 @@
         </article>
       {% endif %}
     </section>
-
 
     <section class="archive-section" id="articles" aria-labelledby="archive-heading">
       <div class="section-heading">
@@ -95,12 +88,11 @@
       <p class="empty-state" id="empty-state" hidden>No hem trobat cap entrada amb aquesta cerca.</p>
     </section>
 
-
     <section class="subscribe-section" id="subscriu-te" aria-labelledby="subscribe-heading">
       <div class="subscribe-mark" aria-hidden="true">✳</div>
       <p class="eyebrow">UNA CARTA DE TANT EN TANT</p>
-      <h2 id="subscribe-heading">Les novetats, directament al teu correu</h2>
-      <p>Subscriu-t'hi per rebre un correu quan es publiqui una nova entrada. Sense soroll ni missatges innecessaris.</p>
+      <h2 id="subscribe-heading">les noves cartes, directament al teu correu</h2>
+      <p>subscriu-t'hi per rebre un correu quan es publiqui una nova entrada. </p>
     
       <form
         class="subscribe-form"
@@ -129,23 +121,23 @@
           autocomplete="email"
           required
         >
-        <button type="submit">Vull subscriure-m'hi</button>
+        <button type="submit">vull subscriure-m'hi</button>
       </form>
     
-      <p class="form-note">Rebràs un correu per confirmar la subscripció. Podràs donar-te de baixa quan vulguis.</p>
+      <p class="form-note">rebràs un correu per confirmar la subscripció. Podràs donar-te de baixa quan vulguis.</p>
       <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
     </section>
 
     <section class="about-section" id="sobre-mi">
-      <p class="eyebrow">QUI HI HA AL DARRERE</p>
-      <h2>Sobre aquest racó</h2>
-      <p>cartesdesdaachen és un espai personal per posar paraules a les idees, compartir descobertes i guardar històries que mereixen una mica més de temps. Aquest text és provisional: el pots substituir per la teva presentació.</p>
+      <p class="eyebrow">QUI HI HA AL DARRERE D'AQUESTES CARTES</p>
+      <h2>sobre aquest racó</h2>
+      <p>cartesdesdaachen és un espai personal per posar paraules als pensaments i compartir descobertes, però sobretot per guardar històries que en el futur m'agradarà poder recordar. </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="brand" href="#inici">cartesdesdaachen</a>
-    <p>Fet amb calma · © <span id="year"></span></p>
+    <p>Fet per mi i per qui ho vulgui llegir · © <span id="year"></span></p>
   </footer>
   <script src="script.js?v=3"></script>
 </body>
