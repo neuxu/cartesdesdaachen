@@ -15,7 +15,7 @@ body { margin: 0; background: var(--paper-light); color: var(--ink); font-family
 a { color: inherit; }
 .site-header { background: var(--paper); }
 .hero-banner {
-  background-image: url("../cartesdesdaachen.PNG");
+  background-image: url("cartesdesdaachen.PNG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
