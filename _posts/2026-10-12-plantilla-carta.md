@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Títol de la carta"
-date: 2026-10-12 12:00:00 +0200
+date: 2026-10-11 12:00:00 +0200
 description: "Una frase breu que resumeixi aquesta carta."
 ---
 
