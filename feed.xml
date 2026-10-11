@@ -1,31 +1,23 @@
+
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>cartesdesdaachen</title>
-    <link>https://neuxu.github.io/cartesdesdaachen/</link>
-    <description>Cartes, pensaments i històries des d’Aachen.</description>
-    <language>ca</language>
-    <lastBuildDate>Sun, 11 Oct 2026 12:00:00 +0200</lastBuildDate>
+    <title>{{ site.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>{{ site.description | xml_escape }}</description>
+    <language>{{ site.lang }}</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    {% for post in site.posts %}
     <item>
-      <title>De vegades, només cal aturar-se</title>
-      <link>https://neuxu.github.io/cartesdesdaachen/#article-exemple</link>
-      <guid isPermaLink="true">https://neuxu.github.io/cartesdesdaachen/#article-exemple</guid>
-      <description>Sobre trobar una mica d’espai enmig del soroll de cada dia.</description>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 +0200</pubDate>
+      <title>{{ post.title | xml_escape }}</title>
+      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+      <description>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | xml_escape }}</description>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
     </item>
-    <item>
-      <title>Les petites coses que ens queden</title>
-      <link>https://neuxu.github.io/cartesdesdaachen/#articles</link>
-      <guid isPermaLink="false">cartesdesdaachen-2026-10-02-petites-coses</guid>
-      <description>Una passejada, una conversa inesperada i altres moments que fan casa.</description>
-      <pubDate>Fri, 02 Oct 2026 12:00:00 +0200</pubDate>
-    </item>
-    <item>
-      <title>Començar abans de tenir-ho tot clar</title>
-      <link>https://neuxu.github.io/cartesdesdaachen/#articles</link>
-      <guid isPermaLink="false">cartesdesdaachen-2026-09-21-comencar</guid>
-      <description>Potser no cal tenir totes les respostes per començar a escriure.</description>
-      <pubDate>Mon, 21 Sep 2026 12:00:00 +0200</pubDate>
-    </item>
+    {% endfor %}
   </channel>
 </rss>
