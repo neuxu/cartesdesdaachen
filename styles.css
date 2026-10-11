@@ -15,10 +15,10 @@ body { margin: 0; background: var(--paper-light); color: var(--ink); font-family
 a { color: inherit; }
 .site-header { background: var(--paper); }
 .hero-banner {
-  min-height: clamp(170px, 29vw, 340px);
-  background:
-    linear-gradient(180deg, rgba(48,39,29,.05), rgba(48,39,29,.18)),
-    url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=85") center 52% / cover;
+  background-image: url("../cartesdesdaachen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-inner { max-width: 1080px; margin: auto; padding: 25px 28px 30px; text-align: center; }
 .brand { display: inline-block; font: 400 clamp(2rem, 4vw, 3.15rem)/1.15 var(--serif); text-decoration: none; letter-spacing: -.035em; }
