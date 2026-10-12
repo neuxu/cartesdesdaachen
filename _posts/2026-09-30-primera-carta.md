@@ -20,5 +20,3 @@ I quan he arribat a la porta ha passat el més surrealista de tot. L’escenari 
 Abans de tornar a l’habitació he passat un moment pel Lidl a comprar alguna cosa de menjar –perquè a les cinc de la tarda encara no havia dinat– i he fet una volteta pels jardins que envolten les quatre torres. Mentre passejava hi ha hagut un moment de maleir tot, i de preguntar-me què coi estic fent jo a una ciutat perduda d’Alemanya sense saber alemany i sense tenir habitació on caure morta. Però després, de menjar i de veure els camps verds, he començat a romantitzar de nou tot i sentir la ciutat una mica més meva.
 
 Crec que avui ja no escriuré més –ja és suficient amb la parrafada que he fet–, ara a dormir i a aconseguir les claus del que serà la meva nova casa.
-
-💌
