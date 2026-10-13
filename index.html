@@ -90,7 +90,7 @@
       <p class="eyebrow">UNA CARTA DE TANT EN TANT</p>
       <h2 id="subscribe-heading">les noves cartes, directament al teu correu</h2>
       <p>subscriu-t'hi per rebre un correu quan es publiqui una nova entrada. </p>
-    
+
       <form
         class="subscribe-form"
         id="subscribe-form"
@@ -102,14 +102,17 @@
           name="uri"
           value="https://neuxu.github.io/cartesdesdaachen/feed.xml"
         >
+      
         <input
           type="hidden"
           name="return"
           value="https://neuxu.github.io/cartesdesdaachen/"
         >
-        <input type="hidden" name="redirect" value="true">
-    
-        <label class="visually-hidden" for="email">La teva adreça electrònica</label>
+      
+        <label class="visually-hidden" for="email">
+          La teva adreça electrònica
+        </label>
+      
         <input
           id="email"
           name="email"
@@ -118,8 +121,10 @@
           autocomplete="email"
           required
         >
+      
         <button type="submit">vull subscriure-m'hi</button>
       </form>
+
     
       <p class="form-note">rebràs un correu per confirmar la subscripció. Podràs donar-te de baixa quan vulguis.</p>
       <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
