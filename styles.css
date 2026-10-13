@@ -97,3 +97,73 @@ button:hover { background: var(--accent-dark); }
     padding: 28px 18px 40px;
   }
 }
+
+
+/* Adaptació de la pàgina principal a mòbils */
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    width: 100%;
+  }
+
+  .hero-banner {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-inner {
+    width: 100%;
+    padding: 24px 18px;
+  }
+
+  .header-inner nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 18px;
+  }
+
+  .latest-section,
+  #articles,
+  #sobre-mi,
+  #subscriu-te {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .featured-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .featured-image {
+    width: 100%;
+    max-width: 100%;
+    min-height: 220px;
+  }
+
+  .featured-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
