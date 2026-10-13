@@ -168,37 +168,28 @@ button:hover { background: var(--accent-dark); }
 }
 
 
-/* Adaptació del formulari de subscripció al mòbil */
+
 @media (max-width: 600px) {
   #subscriu-te {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    padding: 32px 18px;
+    padding: 24px 16px;
     box-sizing: border-box;
-    overflow-wrap: anywhere;
   }
 
-  #subscriu-te form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
+  #subscriu-te form,
+  #subscriu-te iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
   }
 
   #subscriu-te input,
-  #subscriu-te button,
-  #subscriu-te iframe {
-    width: 100%;
+  #subscriu-te button {
     max-width: 100%;
     min-width: 0;
     box-sizing: border-box;
-  }
-
-  #subscriu-te input {
-    font-size: 16px;
   }
 }
