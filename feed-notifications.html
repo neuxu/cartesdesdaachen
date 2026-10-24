@@ -10,7 +10,8 @@ permalink: /feed-notifications.xml
     <description>Avisos de noves cartes publicades.</description>
     <link>https://neuxu.github.io/cartesdesdaachen/</link>
     <language>ca</language>
-    {% for post in site.posts limit:10 %}
+    {% assign avisos = site.posts | sort: 'date' | reverse %}
+    {% for post in avisos limit:10 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
