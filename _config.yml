@@ -8,3 +8,6 @@ plugins:
   - jekyll-feed
 
 permalink: /cartes/:title/
+
+feed:
+  excerpt_only: true
