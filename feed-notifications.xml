@@ -9,7 +9,7 @@ layout: null
     <description>Avisos de noves cartes publicades.</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <language>ca</language>
-    {% for post in site.posts limit:20 %}
+    {% for post in site.posts limit:1 %}
     <item>
       <title>Hi ha una nova carta: {{ post.title | xml_escape }}</title>
       <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
@@ -20,3 +20,4 @@ layout: null
     {% endfor %}
   </channel>
 </rss>
+
