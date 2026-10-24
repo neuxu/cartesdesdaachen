@@ -1,23 +1,11 @@
-
 ---
-layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
     <title>Cartes des d’Aachen — Avisos</title>
-    <description>Avisos de noves cartes publicades.</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <description>Prova del feed d’avisos.</description>
+    <link>https://neuxu.github.io/cartesdesdaachen/</link>
     <language>ca</language>
-    {% for post in site.posts limit:1 %}
-    <item>
-      <title>Hi ha una nova carta: {{ post.title | xml_escape }}</title>
-      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
-      <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
-      <description>Ja pots llegir una nova carta de Cartes des d’Aachen. Entra a l’enllaç per llegir-la.</description>
-      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-    </item>
-    {% endfor %}
   </channel>
 </rss>
-
