@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Del primer cap de setmana"
-date: 2026-10-03 12:00:00 +0200
+date: 2026-10-04 12:00:00 +0200
 description: "fer mudança sense cotxe implica caminar molt"
 ---
 
